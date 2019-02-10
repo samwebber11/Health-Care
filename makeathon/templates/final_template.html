@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top" id="main-nav">
+      <div class="container">
+        <a href="profile.html" class="navbar-brand">
+          <img src="img/logo.png" alt="logo" class="img1" />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="profile.html" class="nav-link" style="color:#913535"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a href="symptoms.html" class="nav-link" style="color:#913535"
+                >Symptoms Analysis</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="dianosis.html" class="nav-link" style="color:#913535"
+                >Diagnosis History</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link btn btn-outline-danger"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" style="padding-top:150px">
+      <header>
+        <h1>Enter Your Symptoms</h1>
+      </header>
+      <form action = "http://localhost:5000/result" method = "POST">
+        
+        <div class="input-group input-group-lg mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fas fa-notes-medical"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control"  name = "symptom 1"  placeholder="Syptom 1" />
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fas fa-notes-medical"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control" name = "symptom 2"  placeholder="Syptom 2" />
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fas fa-notes-medical"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control" name="symptom 3" placeholder="Syptom 3" />
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          class="btn btn-outline-danger btn-block-lg"
+        />
+      </form>
+    </div>
+  </body>
+</html>

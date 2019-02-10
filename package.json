@@ -1,9 +1,9 @@
 {
-  "name": "authenticationIntro",
+  "name": "NodeAuth",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/DDCSLearning/authenticationIntro.git",
-  "author": "DanielDeutsch <deudan1010@gmail.com>",
+  "repository": "https://github.com/samwebber11/Health-Care",
+  "author": "Kumar Sambhav Jain",
   "license": "none",
   "scripts": {
     "start": "node app",
@@ -14,7 +14,9 @@
     "body-parser": "^1.17.1",
     "connect-mongo": "^1.3.2",
     "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
     "express-session": "^1.15.2",
+    "handlebars": "^4.1.0",
     "mongoose": "^4.9.8",
     "nodemon": "^1.11.0",
     "path": "^0.12.7"

@@ -277,7 +277,7 @@ h5 {
   padding: 0.5em;
 }
 .header-social a.face {
-  background: url(../images/fac.png) no-repeat 12px 9px #3b62a3;
+  background: url(../img/fac.png) no-repeat 12px 9px #3b62a3;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -294,7 +294,7 @@ h5 {
   border-radius: 14px 0px 0px 14px;
 }
 .header-social a.face:hover {
-  background: url(../images/fac.png) no-repeat 12px 9px #0e387c;
+  background: url(../img/fac.png) no-repeat 12px 9px #0e387c;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -302,7 +302,7 @@ h5 {
 }
 /*-- w3layouts --*/
 .header-social a.goog {
-  background: url(../images/google.png) no-repeat 12px 9px #d64639;
+  background: url(../img/google.png) no-repeat 12px 9px #d64639;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -320,7 +320,7 @@ h5 {
   border-radius: 0px 14px 14px 0px;
 }
 .header-social a.goog:hover {
-  background: url(../images/google.png) no-repeat 12px 9px #ff4b3b;
+  background: url(../img/google.png) no-repeat 12px 9px #ff4b3b;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -555,7 +555,7 @@ h5 {
     font-size: 0.9em;
   }
   .header-social a.face {
-    background: url(../images/fac.png) no-repeat 12px 6px #3b62a3;
+    background: url(../img/fac.png) no-repeat 12px 6px #3b62a3;
     font-size: 14px;
     width: 24%;
   }
@@ -563,16 +563,16 @@ h5 {
     line-height: 1.5em;
   }
   .header-social a.face:hover {
-    background: url(../images/fac.png) no-repeat 12px 6px #0e387c;
+    background: url(../img/fac.png) no-repeat 12px 6px #0e387c;
   }
   .header-social a.goog {
-    background: url(../images/google.png) no-repeat 12px 6px #d64639;
+    background: url(../img/google.png) no-repeat 12px 6px #d64639;
     font-size: 14px;
     padding: 0 2.5em;
     width: 19%;
   }
   .header-social a.goog:hover {
-    background: url(../images/google.png) no-repeat 12px 6px #ff4b3b;
+    background: url(../img/google.png) no-repeat 12px 6px #ff4b3b;
   }
 }
 /*--//responsive-design---*/

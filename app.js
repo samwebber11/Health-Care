@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
+const handlebars = require('express-handlebars');
+const path = require('path')
 
 //connect to MongoDB
 mongoose.connect("mongodb://health-care:pcm15291@ds011308.mlab.com:11308/health-care")
@@ -31,7 +33,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 // serve static files from template
-app.use(express.static(__dirname + '/Front-End'));
+app.use(express.static(__dirname + '/Health'));
+app.set('views',path.join(__dirname, 'views'));
+app.engine('handlebars',handlebars({defaultLayout:'layout'}));
+app.set('view engine','handlebars');
 
 // include routes
 const routes = require('./routes/router');
@@ -53,6 +58,6 @@ app.use(function (err, req, res, next) {
 
 
 // listen on port 3000
-app.listen(3023, function () {
+app.listen(5526, function () {
   console.log('Express app listening on port 3000');
 });

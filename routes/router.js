@@ -5,7 +5,7 @@ var path = require('path');
 
 // GET route for reading data
 router.get('/', function (req, res, next) {
-  return res.sendFile(path.join(__dirname + '/Front-End/index.html'));
+  return res.sendFile(path.join(__dirname + '/Health/index.html'));
 });
 
 //POST route for updating data
@@ -69,14 +69,24 @@ router.get('/profile', function (req, res, next) {
           err.status = 400;
           return next(err);
         } else {
-          return res.send('<h1>Welcome To Arpan Health Care</h1>'+
-          user.username + '<h2>Your Email Id: </h2>' + user.email + '<br><a type="button" href="/history">History Of Your Diagonsis</a>'+'<br><a type="button" href="/symptoms">Enter Your Symptoms here</a>'+'<br><a type="button" href="/logout">Logout</a>')
+          return res.sendFile(path.join(__dirname+'/profile.html'))
+          // return res.send('<h1>Welcome To Arpan Health Care</h1>'+
+          // user.username + '<h2>Your Email Id: </h2>' + user.email + '<br><a type="button" href="/history">History Of Your Diagonsis</a>'+'<br><a type="button" href="/symptoms">Enter Your Symptoms here</a>'+'<br><a type="button" href="/logout">Logout</a>')
         }
       }
     });
 });
 
-
+router.get('/symptoms',function(req,res,next) {
+  User.findById(req.session.userId)
+  .exec(function(error,user) {
+    if(error) {
+      return next(error);
+    } else {
+      return res.sendFile(path.join(__dirname+'/symptoms.html'));
+    }
+  })
+})
 
 router.get('/history',function (req,res,next) {
   User.findById(req.session.userId)

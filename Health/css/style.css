@@ -1,0 +1,199 @@
+body {
+  overflow-x: hidden;
+}
+.img1 {
+  height: 75%;
+  width: 75%;
+}
+#img2 {
+  height: 175% !important;
+  width: 175% !important;
+}
+.navbar {
+  opacity: 0.8;
+  border-bottom: 3px solid #913535;
+  background: #ffedc6;
+  color: #913535;
+}
+#info {
+  background: #eeeae1;
+}
+.nav-link:hover {
+  color: #00204a !important;
+}
+.navbar .nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.fas {
+  color: #3694a8;
+}
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url("../img/616.jpg");
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url("../img/oind.jpg");
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url("../img/download.jpg");
+  background-size: cover;
+}
+#authors img {
+  margin-top: -50px;
+}
+#authors .card:hover {
+  background: #ffedc6;
+  color: #913535;
+}
+
+#authors .fab {
+  color: #3694a8;
+}
+#authors .fab:hover {
+  color: #913535;
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/25.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/medicore.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+}
+#contact {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/black.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+#page-header .row {
+  padding-top: 100px;
+}
+#page-header1 .row {
+  padding-top: 100px;
+}
+#page-header {
+  position: relative;
+  min-height: 400px;
+  /* width: 100%; */
+  height: 50%;
+  background: url("../img/wv04.jpg");
+  background-repeat: no-repeat;
+  /* background-position: 0 -400px; */
+  /* background-attachment: fixed; */
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center;
+}
+#page-header1 {
+  position: relative;
+  min-height: 400px;
+  /* width: 100%; */
+  height: 50%;
+  background: url("../img/19.jpg");
+  background-repeat: no-repeat;
+  /* background-position: 0 -400px; */
+  /* background-attachment: fixed; */
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-img {
+  margin-top: -50px;
+}
+
+#faq .card {
+  border: #444;
+  color: #913535 !important;
+}
+
+#faq a {
+  color: #913535 !important;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+  color: #913535 !important;
+}
+
+#main-footer {
+  background: #913535;
+  color: #fff;
+}
+#testimonials {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/black.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+.card-header {
+  color: #ffedc6;
+}
+#faq {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/black.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+.w3 {
+  padding-top: 150px;
+}
